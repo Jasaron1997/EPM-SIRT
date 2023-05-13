@@ -14,7 +14,7 @@ function App() {
   const [automatico, setAutomatico] = useState(false);
 
   const getApi = useCallback(async () => {
-    let response: sirtData = await fetchGet("http://127.0.0.1:8080/sitr");
+    let response: sirtData = await fetchGet("http://3.133.113.39/sitr");
     if (response) {
       setTipoDeGeneracion(response.TipoDeGeneracion);
       setTipoDePlanta(response.TipoDePlanta);
