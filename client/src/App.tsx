@@ -74,7 +74,7 @@ function App() {
 
   const getAutomatico = useCallback(() => {
     setAutomatico(!automatico);
-  }, []);
+  }, [automatico]);
 
   return (
     <div className="container-fluid">
